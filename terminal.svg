@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <style>
+      @keyframes a { to { opacity: 1; } }
+      @keyframes b { 0%,49%{opacity:1}50%,100%{opacity:0} }
+    </style>
+  </defs>
+
+  <!-- terminal background -->
+  <rect width="800" height="480" fill="#0a0a0a" rx="10"/>
+
+  <!-- title bar -->
+  <rect width="800" height="36" fill="#111111" rx="10"/>
+  <rect y="20" width="800" height="16" fill="#111111"/>
+  <line x1="0" y1="36" x2="800" y2="36" stroke="#1c1c1c"/>
+
+  <!-- window buttons -->
+  <circle cx="22" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="43" cy="18" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="18" r="6" fill="#28c840"/>
+
+  <!-- tab title -->
+  <text x="400" y="24" fill="#444" font-size="12" font-family="'Courier New',Courier,monospace" text-anchor="middle">linus@dev: ~ — bash</text>
+
+  <!-- ─── content ─── -->
+
+  <text x="26" y="66"  fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s .4s forwards">$ cat /etc/profile</text>
+
+  <text x="26" y="92"  fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s .9s forwards">  handle   : linus</text>
+  <text x="26" y="111" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 1.05s forwards">  role     : full-stack developer</text>
+  <text x="26" y="130" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 1.2s forwards">  focus    : product · infra · tooling</text>
+  <text x="26" y="149" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 1.35s forwards">  builds   : web apps · APIs · operational systems</text>
+  <text x="26" y="168" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 1.5s forwards">  approach : build quietly, ship consistently</text>
+  <text x="26" y="187" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 1.65s forwards">  status   : always compiling</text>
+
+  <text x="26" y="216" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 2.1s forwards">$ ls ./stack/</text>
+
+  <text x="26" y="242" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 2.55s forwards">  frontend  →  ts · js · next.js · react · vite</text>
+  <text x="26" y="261" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 2.7s forwards">  backend   →  go · node.js · postgresql</text>
+  <text x="26" y="280" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 2.85s forwards">  infra     →  docker · linux · nginx · git</text>
+  <text x="26" y="299" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 3.0s forwards">  probing   →  clickhouse · kafka</text>
+
+  <text x="26" y="328" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 3.45s forwards">$ cat manifesto.txt</text>
+
+  <text x="26" y="357" fill="#39d353" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 3.9s forwards">  the best systems are invisible.</text>
+  <text x="26" y="376" fill="#39d353" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 4.05s forwards">  the best code is the code nobody has to read.</text>
+  <text x="26" y="395" fill="#39d353" font-size="13" font-family="'Courier New',Courier,monospace" opacity="0" style="animation:a .01s 4.2s forwards">  i measure in problems eliminated.</text>
+
+  <!-- prompt + blinking cursor -->
+  <g opacity="0" style="animation:a .01s 4.65s forwards">
+    <text x="26" y="452" fill="#00ff41" font-size="13" font-family="'Courier New',Courier,monospace">$ </text>
+    <rect x="41" y="439" width="8" height="14" fill="#00ff41" style="animation:b 1s step-end infinite"/>
+  </g>
+
+</svg>
